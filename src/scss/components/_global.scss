@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, a {
+  color: inherit;
+  font-family: $primary;
+}
+
+.block {
+  padding: 30px 15px;
+}
+
+
+.button.primary {
+  background: $green;
+
+  &:hover {
+    background: darken($green, 10%);
+  }
+}

@@ -1,0 +1,62 @@
+html(class="no-js", lang="en")
+  include partials/_header
+  body
+    include _navbar
+    .content.why
+      h1.text-center.page-title.small-10.small-centered.columns Why 1CapApp?
+      p.text-center.small-10.small-centered.columns Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum.
+      .features.row
+        .item.small-12.columns
+          .small-8.columns
+            h4 Scheduling & Managing Sessions
+            p Scheduling and managing text streaming session is easy and intuitive.  There are many tools that make the experience simple. Here are just a few: Recurring Sessions, Presets/Templates, Calendar View, Group by Captioner, Automatic Sending of Transcripts, Reminder Emails, Quick Email of Session Links, Test Stream.
+          .small-4.columns
+            img(src='http://placehold.it/350x200')
+        .item.small-12.columns
+          .small-8.columns.right
+            h4 Text Stream Viewing Experience
+            p Your clients will love the viewer interface. Clients that have esperienced 1CapApp want nothing else!
+          .small-4.columns
+            img(src='http://placehold.it/350x200')
+        .item.small-12.columns
+          .small-8.columns
+            h4 Customer Support
+            p We pride ourselves on our excellent customer support.  Call us!   We can help you resolve your issues integrating your individual CAT software implementation with our service.
+          .small-4.columns
+            img(src='http://placehold.it/350x200')
+        .item.small-12.columns
+          .small-8.columns.right
+            h4 Innovations
+            p The 1CapApp team is continually adding new functionality with no additional cost to our clients.  In fact we find new ways where you and your clients can benefit from using our service.  For Instance Sponsor Ads, & Twitter Tweets.
+          .small-4.columns
+            img(src='http://placehold.it/350x200')
+        .item.small-12.columns
+          .small-8.columns
+            h4 Pricing
+            p One reason 1CapApp was born was because the two founders felt the currently available service was way too expensive.  We promise to keep our prices at very affordable levels.  Try us, chances are we can save you up to 40%.
+          .small-4.columns
+            img(src='http://placehold.it/350x200')
+      include _contact
+    //- include _footer
+    script(src='vendor/jQuery.js')
+
+
+    script(src='vendor/outdatedbrowser.js')
+    script(type='text/javascript').
+      outdatedBrowser({
+        bgColor: '#f25648',
+        color: '#ffffff',
+        lowerThan: 'transform',
+        languagePath: ''
+      });
+
+    script(src="js/scripts.js")
+
+    script(type='text/javascript').
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '', 'auto');
+      ga('send', 'pageview');

@@ -1,0 +1,23 @@
+/* Colors */
+
+$green: #7ece07;
+$blue: #07325f;
+
+/* Box Shadow */
+@mixin boxshadow {
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+
+a {
+  /* color: $green !important; */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

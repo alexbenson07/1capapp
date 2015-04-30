@@ -1,0 +1,120 @@
+doctype html
+html(class="no-js", lang="en")
+  include partials/_header
+  body
+    include _navbar
+    .hero
+      .hero-content
+        h1 Great!
+        h4 You’ve heard about 1CapApp. Try it for free.  We will help you get started. Save 40%.
+    .content.row
+      .welcome.block.small-10.small-centered.columns
+        h2.text-center.page-title Real-Time Remote Text Streaming Platform
+        p.text-center 1CapApp® streaming text is smooth and fast.  Streaming text is delivered to the view page word by word in a nice flowing manner making your client’s viewing experience amazing.   Sessions are easy to create and manage.  1CapApp was developed by two veteran captioners and a very talented software engineering team who continue to transform their ideas into innovative enhancements that provide great benefit for 1CapApp customers and their clients. Give us a try.  You’ll be glad you did.  Some of the main features are described below.
+      .video-wrap.block.small-8.small-centered.columns
+        .flex-video.widescreen
+          iframe(width='560', height='315', src='https://www.youtube.com/embed/dnsTsRRmkOA', frameborder='0', allowfullscreen='')
+      .features.block.small-10.small-centered.columns
+        ul.small-block-grid-2
+          li
+            h5 Fastest Text Stream
+            p Getting the speaker’s words to the display screen is lightning fast with our JetCap push engine allowing clients to feel more connected with the speaker.
+          li
+            h5 Attractive Pricing
+            p We can save you up to 40% on your current text streaming costs.
+          li
+            h5 Automatic Delivery of Transcript
+            p 1CapApp makes it possible to automatically deliver the transcript and notes to the client at the end of the live streaming session.
+          li
+            h5 Schedule Recurring Sessions
+            p Saving you time is important. Scheduling recurring sessions is easy. A monthly calendar view allows you to see ALL sessions scheduled into the future.
+          li
+            h5 Import Schedules into 1CapApp
+            p 1CapApp allows for automatic importing of schedules using .csv files. Export your schedules from your office scheduler in the correct format and 1CapApp will import the schedules, eliminating errors and saving much time.
+          li
+            h5 Note Taking Box on Same Screen as Streaming Text
+            p With a note taking box on the same screen as the streaming text, the viewer does not have to move their eyes off of the screen when taking notes making it much easier to stay in sync with the speaker and the streaming text.
+      .cta.block.small-10.small-centered.columns
+        h3.text-center This is a call to action
+        a.button.primary.small-4.small-centered.columns Request Demo
+      .pricing.block.small-10.small-centered.columns
+        h3.text-center Pricing Options
+        //- use foundation's pricing block, figure it out stupid
+        ul.pricing-table
+          li.title Pro Pack I
+          li.price Up to 100 Hours
+          li.description $0.07 (USD)
+          li.bullet-item /min
+          li.cta-button Choose This Pack 
+        ul.pricing-table
+          li.title Pro Pack I
+          li.price Up to 100 Hours
+          li.description $0.07 (USD)
+          li.bullet-item /min 
+          li.cta-button Choose This Pack  
+        ul.pricing-table
+          li.title Pro Pack I
+          li.price Up to 100 Hours
+          li.description $0.07 (USD)
+          li.bullet-item /min
+          li.cta-button Choose This Pack 
+      .contact.block.small-10.small-centered.columns
+        form.small-8.columns
+          .row
+            .large-12.columns
+              label
+                | Name
+                input(type='text', placeholder='Name')
+          .row
+            .large-12.columns
+              label
+                | Phone Number
+                input(type='tel', placeholder='Phone Number')
+          .row
+            .large-12.columns
+              label
+                | Email Address
+                input(type='email', placeholder='Email Address')
+          .row
+            .large-12.columns
+              label
+                | Message
+                textarea(placeholder='Leave Us A Message')
+        .social.small-3.columns.small-offset-1
+          ul
+            li.tel
+              a(href="") 855.422.7277
+            li.email
+              a(href="") contact@1capapp.com
+            li.twitter
+              a(href="") @1CapApp
+            li.facebook
+              a(href="") 1CapApp
+              
+          a.button.primary.small-10.columns Submit
+    
+    include _footer
+    script(src='vendor/jQuery.js')
+    
+    script(src='vendor/foundation.min.js')
+    
+    script(src='vendor/outdatedbrowser.js')
+    script(type='text/javascript').
+      outdatedBrowser({
+        bgColor: '#f25648',
+        color: '#ffffff',
+        lowerThan: 'transform',
+        languagePath: ''
+      });
+    
+    script(src="js/scripts.js")
+    
+    script(type='text/javascript').
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '', 'auto');
+      ga('send', 'pageview');
+    

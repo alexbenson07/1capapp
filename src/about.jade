@@ -1,0 +1,57 @@
+html(class="no-js", lang="en")
+  include partials/_header
+  body
+    include _navbar
+    .content.about
+      h1.text-center.page-title.small-10.small-centered.columns A little about us
+      p.text-center.small-10.small-centered.columns 1CapApp started when two seasoned captioners put their wish list together for they wanted from a text streaming platform.  What was currently available was way too expensive and did not satisfy their needs.  Furthermore, they didn’t foresee the currently available applications providing their needed functionality any time soon and they had customers begging for more features.
+      p.text-center.small-10.small-centered.columns After finding a highly talented developer and a couple of years of development and testing 1CapApp was born.
+      p.text-center.small-10.small-centered.columns The two founders and our developers have created an easy to use, full featured text streaming platform that just looks and feels nice.  At right is our Admin Home page and Streaming Text view Page.
+      .photos.row
+        .headshot.small-4.small-offset-2.columns
+          img(src='images/jeanette.jpg')
+          h3.text-center Jeanette Christian
+          h5.text-center Founder
+          ul.inline-list.small-8.small-centered.columns
+            li.text-center.linkedin.icons
+            li.text-center.twitter.icons
+            li.text-center.email.icons
+        .headshot.small-4.columns
+          img(src='images/christine.jpg')
+          h3.text-center Christine Joseph
+          h5.text-center Founder
+          ul.inline-list.small-8.small-centered.columns
+            li.text-center.linkedin.icons
+            li.text-center.twitter.icons
+            li.text-center.email.icons
+      include _contact
+      
+    include _footer
+
+
+
+
+
+
+    script(src='vendor/jQuery.js')
+
+
+    script(src='vendor/outdatedbrowser.js')
+    script(type='text/javascript').
+      outdatedBrowser({
+        bgColor: '#f25648',
+        color: '#ffffff',
+        lowerThan: 'transform',
+        languagePath: ''
+      });
+
+    script(src="js/scripts.js")
+
+    script(type='text/javascript').
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '', 'auto');
+      ga('send', 'pageview');
