@@ -35,16 +35,19 @@
   background-size: cover;
   position: relative;
 
-/*   &:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: transparentize(#000, .8);
-}
- */
+
+  @media screen and (max-width: 680px) {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: transparentize(#fff, .5);
+    }
+  }
+
   .hero-content {
     width: 80%;
     margin: 0 auto 0;
@@ -53,6 +56,15 @@
     position: relative;
     /* text-shadow: 1px 1px 3px #D6D6D6; */
     color: black;
+
+    @media screen and (max-width: 680px) {
+      h4,
+      h1 {
+        text-align: center;
+        width: 80%!important;
+        margin: 0 auto;
+      }
+    }
 
     h4 {
       width: 40%;
@@ -149,6 +161,39 @@ ul.social-icons {
 
 .contact {
   margin-top: 50px;
+
+  @media screen and (max-width: 1000px) {
+    .social {
+      width: 80%;
+      margin: 0 auto;
+      ul {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin: 0;
+        }
+      }
+    .form {
+      width: 100%;
+    }
+  }
+
+  .social {
+    ul {
+      li {
+        &.tel {
+          &:before {
+            content: '';
+            width: 25px;
+            height: 25px;
+            background: #000;
+            position: absolute;
+            
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -204,4 +249,11 @@ h5, h4 {
 .social li {
   margin-bottom: 25px;
   list-style: none;
+}
+
+
+a.button {
+  @media screen and (max-width: 640px) {
+    width: 80%;
+  }
 }

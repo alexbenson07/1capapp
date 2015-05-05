@@ -8,6 +8,12 @@ nav.top-bar {
   background: $blue;
   z-index: 50;
 
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
   li {
     background: transparent!important;
     height: 45px;
@@ -25,6 +31,10 @@ nav.top-bar {
       background: $blue!important;
       font-size: 14px;
       letter-spacing: .1em;
+
+      @media screen and (max-width: 680px) {
+        font-size: 12px;
+      }
     }
     &.name {
       border-bottom: 0;
