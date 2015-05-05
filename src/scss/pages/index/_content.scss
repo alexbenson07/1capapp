@@ -188,7 +188,7 @@ ul.social-icons {
             height: 25px;
             background: #000;
             position: absolute;
-            
+
           }
         }
       }
@@ -253,7 +253,16 @@ h5, h4 {
 
 
 a.button {
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 641px) {
     width: 80%;
+  }
+}
+
+
+.support {
+  @media screen and (max-width: 641px) {
+    .none {
+      margin-top: 50px;
+    }
   }
 }
