@@ -161,6 +161,7 @@ ul.social-icons {
 
 .contact {
   margin-top: 50px;
+  overflow: hidden;
 
   @media screen and (max-width: 1000px) {
     .social {
@@ -188,7 +189,7 @@ ul.social-icons {
             height: 25px;
             background: #000;
             position: absolute;
-            
+
           }
         }
       }
