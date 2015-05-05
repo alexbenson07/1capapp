@@ -182,14 +182,54 @@ ul.social-icons {
   .social {
     ul {
       li {
+        &:before {
+          content: '';
+          width: 25px;
+          height: 25px;
+          left: 0;
+          position: absolute;
+          background-size: contain;
+          background-position: 0;
+          background-repeat: no-repeat;
+        }
+
         &.tel {
           &:before {
-            content: '';
-            width: 25px;
-            height: 25px;
-            background: #000;
-            position: absolute;
+            background-image: url('../images/phone.png');
+          }
 
+          &:hover:before {
+            background-image: url('../images/phone-hover.png');
+          }
+        }
+
+        &.email {
+          &:before {
+            background-image: url('../images/mail.png');
+          }
+
+          &:hover:before {
+            background-image: url('../images/mail-hover.png');
+          }
+        }
+
+        &.twitter {
+          &:before {
+            background-image: url('../images/twitter.png');
+          }
+
+          &:hover:before {
+            background-image: url('../images/twitter-hover.png');
+          }
+        }
+
+        &.facebook {
+          &:before {
+            background-image: url('../images/facebook.png');
+          }
+
+          &:hover:before {
+            background-image: url('../images/facebook-hover.png');
           }
         }
       }
