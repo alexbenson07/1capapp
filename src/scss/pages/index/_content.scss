@@ -267,3 +267,23 @@ a.button {
     }
   }
 }
+
+
+.why {
+  @media screen and (max-width: 641px) {
+    .features {
+      .item {
+        .medium-4 {
+          text-align: center;
+        }
+        .medium-8 {
+          margin-top: 30px;
+          
+          h4, p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
