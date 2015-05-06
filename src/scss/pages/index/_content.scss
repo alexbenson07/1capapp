@@ -150,7 +150,70 @@ ul.pricing-table {
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  background: #000;
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    background-size: contain;
+    background-position: 0;
+    background-repeat: no-repeat;
+  }
+
+  &.linkedin {
+    &:before {
+      background-image: url('../images/linkedin.png');
+    }
+
+    &:hover:before {
+      background-image: url('../images/linkedin-hover.png');
+    }
+  }
+
+  &:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    background-size: contain;
+    background-position: 0;
+    background-repeat: no-repeat;
+  }
+
+  &.twitter {
+    &:before {
+      background-image: url('../images/twitter.png');
+    }
+
+    &:hover:before {
+      background-image: url('../images/twitter-hover.png');
+    }
+  }
+
+  &:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    background-size: contain;
+    background-position: 0;
+    background-repeat: no-repeat;
+  }
+
+  &.email {
+    &:before {
+      background-image: url('../images/mail.png');
+    }
+
+    &:hover:before {
+      background-image: url('../images/mail-hover.png');
+    }
+  }
 }
 
 
