@@ -1,2 +1,34 @@
 footer.footer
   p.text-center Copyright 2015 All Rights Reserved
+
+#outdated
+  h6 Your browser is out-of-date!
+  p
+    | Update your browser to view this website correctly. 
+    a#btnUpdateBrowser(href='http://outdatedbrowser.com/') Update my browser now 
+  p.last
+    a#btnCloseUpdateBrowser(href='#', title='Close') ×
+
+script(src='vendor/jQuery.js')
+
+script(src='vendor/foundation.min.js')
+
+script(src='vendor/outdatedbrowser.js')
+script(type='text/javascript').
+  outdatedBrowser({
+    bgColor: '#f25648',
+    color: '#ffffff',
+    lowerThan: 'transform',
+    languagePath: ''
+  });
+
+script(src="js/scripts.js")
+
+script(type='text/javascript').
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
