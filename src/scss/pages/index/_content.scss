@@ -261,6 +261,11 @@ ul.social-icons {
           background-position: 0;
           background-repeat: no-repeat;
         }
+        @media screen and (max-width: 500px) {
+          &:before {
+            left: -30;
+          }
+        }
 
         &.tel {
           &:before {
